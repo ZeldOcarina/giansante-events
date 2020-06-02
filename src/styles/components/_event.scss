@@ -53,9 +53,9 @@
   }
 
   &__additional-text {
+    margin: 4rem auto;
     @include respond(phone-port) {
       width: 80%;
-      margin: 4rem auto;
     }
   }
 
