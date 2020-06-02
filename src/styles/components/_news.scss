@@ -1,0 +1,75 @@
+.news {
+  .big-new {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+      width: 100%;
+    }
+  }
+
+  .new {
+    margin-bottom: 5rem;
+
+    @include respond(laptop) {
+      width: 100%;
+    }
+    &__title {
+      font-size: 3.2rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      padding: 0;
+    }
+
+    &__subtitle {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4rem;
+      color: $dark-grey;
+      margin: 0;
+      padding: 0;
+      letter-spacing: 0.1rem;
+    }
+
+    &__text {
+      font-size: 1.8rem;
+      letter-spacing: 0.1rem;
+      width: 87%;
+
+      @include respond(phone-port) {
+        width: 96%;
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+
+  .small-news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 40%);
+    grid-gap: 12rem;
+
+    @include respond(laptop) {
+      grid-template-columns: repeat(auto-fill, 38rem);
+      grid-gap: 8rem;
+    }
+
+    @include respond(1400) {
+      grid-template-columns: 70%;
+    }
+
+    @include respond(tab-land) {
+      grid-template-columns: 80%;
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: 90%;
+    }
+
+    @include respond(phone-land) {
+      grid-template-columns: 100%;
+      grid-gap: 2rem;
+    }
+  }
+}

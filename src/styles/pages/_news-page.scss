@@ -1,0 +1,28 @@
+.news-page {
+  padding: 10rem;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 10%;
+
+  @include respond(tab-port) {
+    grid-template-columns: 100%;
+    grid-gap: 0;
+  }
+
+  @include respond(phone-land) {
+    padding: 5rem;
+  }
+
+  @include respond(phone-port) {
+    padding: 3rem;
+  }
+}
+
+.videos {
+  padding-right: 5rem;
+  width: min-content;
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
+}

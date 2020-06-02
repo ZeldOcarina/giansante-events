@@ -1,0 +1,37 @@
+.events-page {
+  padding: 10rem 20rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 7rem;
+
+  @include respond(tab-land) {
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    padding: 10rem 0;
+    margin: 0 auto;
+  }
+
+  @include respond(tab-port) {
+    grid-template-columns: 100%;
+    grid-gap: 0;
+    padding: 5rem 10rem;
+
+    &:not(:last-child) {
+      .btn-event--more {
+        margin-bottom: 5rem;
+      }
+
+      .btn-event--less {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+
+  @include respond(phone-land) {
+    padding: 5rem;
+  }
+
+  @include respond(phone-port) {
+    padding: 3rem 0;
+  }
+}
